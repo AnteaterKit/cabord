@@ -11,6 +11,7 @@ jobs:
 
       - name: Lint check
         run: |
+          npm run typecheck
           npm run format -- --check
           npm run stylelint
           npm run lint
