@@ -28,7 +28,7 @@
         "test": "nx test",
         "*** Format ***": "",
         "lint": "eslint .",
-        "format": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}'",
+        "format": "prettier '**/*.{yml,js,ts,html,md,less,json}'",
         "stylelint": "stylelint '**/*.{less,css}'",
         "typecheck": "tsc --noEmit --skipLibCheck --incremental false --tsBuildInfoFile null --project tsconfig.spec.json",
         "*** SSR ***": "",
