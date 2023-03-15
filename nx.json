@@ -11,7 +11,7 @@
         "tsconfig.*.json": "*",
         "tsconfig.json": "*"
     },
-    "npmScope": "angular-open-source-starter",
+    "npmScope": "cabord",
     "tasksRunnerOptions": {
         "default": {
             "runner": "@nrwl/nx-cloud",
