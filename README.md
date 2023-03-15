@@ -30,6 +30,6 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 🆓 Feel free to use our library in your commercial and private applications
 
-All **Maskito** packages are covered by [Apache 2.0](/LICENSE)
+All **Cabord** packages are covered by [Apache 2.0](/LICENSE)
 
 Read more about this license [here](https://choosealicense.com/licenses/apache-2.0/)
