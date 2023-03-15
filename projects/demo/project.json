@@ -61,7 +61,7 @@
                     "echo 'Github pages require special baseHref + 404.html'",
                     "echo 'Read more: https://angular.io/guide/deployment#deploy-to-github-pages'",
                     "echo ------",
-                    "nx build --base-href='/angular-open-source-starter/'",
+                    "nx build --base-href='/cabord/'",
                     "cp dist/demo/browser/index.html dist/demo/browser/404.html"
                 ]
             }

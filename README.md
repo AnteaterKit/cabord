@@ -1,7 +1,7 @@
-#cabord
+# cabord
 
-[![Deploy](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/deploy.yml/badge.svg)](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/deploy.yml)
-[![Unit tests](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/test.yml/badge.svg)](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/test.yml)
+[![Deploy](https://github.com/Tinkoff/AnteaterKit/cabord/actions/workflows/deploy.yml/badge.svg)](https://github.com/AnteaterKit/cabord/actions/workflows/deploy.yml)
+[![Unit tests](https://github.com/AnteaterKit/cabord/actions/workflows/test.yml/badge.svg)](https://github.com/AnteaterKit/cabord/actions/workflows/test.yml)
 [![Demo](https://img.shields.io/badge/demo-website-green)](https://anteaterkit.github.io/cabord/)
 
 <p align="center">
@@ -18,7 +18,8 @@
 
 ## Why Cabord
 
-- **Cabord** framework-agnostic library 
+- **Cabord** framework-agnostic library
+
 ## Contributing
 
 If you have suggestions for how **Cabord** could be improved, or want to report a bug, open an issue! We'd love all and

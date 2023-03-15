@@ -1,5 +1,5 @@
 {
-    "name": "@tinkoff/angular-open-source-starter",
+    "name": "@anteaterkit/cabord",
     "version": "0.0.0",
     "description": "This is a template project to develop, create and open-source Angular libraries with demos",
     "keywords": [
@@ -10,18 +10,15 @@
         "starter",
         "tinkoff"
     ],
-    "homepage": "https://github.com/tinkoff/angular-open-source-starter#README",
-    "bugs": "https://github.com/tinkoff/angular-open-source-starter/issues",
-    "repository": "https://github.com/tinkoff/angular-open-source-starter",
+    "homepage": "https://github.com/AnteaterKit/cabord#README",
+    "bugs": "https://github.com/AnteaterKit/cabord/issues",
+    "repository": "https://github.com/AnteaterKit/cabord",
     "license": "Apache-2.0",
     "author": {
-        "name": "Roman Sedov",
-        "email": "79601794011@ya.ru",
-        "url": "http://marsibarsi.me/"
+        "name": "Aleksandr Shatilov"
     },
     "contributors": [
-        "Alex Inkin <alexander@inkin.ru>",
-        "Maksim Ivanov <splincodewd@yandex.ru>"
+        "Aleksandr Shatilov <shatilovdev@gmail.com>"
     ],
     "scripts": {
         "postinstall": "husky install && ngcc --async",
@@ -31,7 +28,7 @@
         "test": "nx test",
         "*** Format ***": "",
         "lint": "eslint .",
-        "format": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}'",
+        "format": "prettier '**/*.{yml,js,ts,html,md,less,json}'",
         "stylelint": "stylelint '**/*.{less,css}'",
         "typecheck": "tsc --noEmit --skipLibCheck --incremental false --tsBuildInfoFile null --project tsconfig.spec.json",
         "*** SSR ***": "",
