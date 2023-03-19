@@ -14,6 +14,16 @@ export const appRoutes: Routes = [
         },
     },
     {
+        path: DemoPath.CabordLibraries,
+        loadChildren: async () =>
+            import(
+                `../pages/documentation/cabord-libraries/cabord-libraries.module`
+            ).then(m => m.CabordLibrariesModule),
+        data: {
+            title: `What is Caboard?`,
+        },
+    },
+    {
         path: '',
         loadChildren: async () =>
             import(`../pages/documentation/what-is-cabord/what-is-cabord.module`).then(

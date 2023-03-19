@@ -8,5 +8,6 @@ import {DemoPath} from '@demo/routes';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WhatIsCabordComponent {
-    readonly cabordLibrariesDocPage = `/${DemoPath.WhatIsCabord}`;
+    readonly cabordLibrariesDocPage = `/${DemoPath.CabordLibraries}`;
+    readonly coreConceptsOverviewDocPage = `/${DemoPath.CoreConceptsOverview}`;
 }
