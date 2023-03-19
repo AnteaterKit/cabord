@@ -9,8 +9,32 @@ export const DEMO_PAGES: TuiDocPages = [
         keywords: 'getting, started, what, is, cabord',
     },
     {
+        section: 'Getting started',
+        title: 'Cabord libraries',
+        route: DemoPath.CabordLibraries,
+        keywords: 'getting, started, what, is, cabord',
+    },
+    {
         section: 'Core concepts',
         title: 'Overview',
+        route: DemoPath.WhatIsCabord,
+        keywords: 'core, concepts, overview',
+    },
+    {
+        section: 'Core concepts',
+        title: 'Install',
+        route: DemoPath.WhatIsCabord,
+        keywords: 'core, concepts, overview',
+    },
+    {
+        section: 'Core concepts',
+        title: 'Create whiteboard',
+        route: DemoPath.WhatIsCabord,
+        keywords: 'core, concepts, overview',
+    },
+    {
+        section: 'Core concepts',
+        title: 'Customise',
         route: DemoPath.WhatIsCabord,
         keywords: 'core, concepts, overview',
     },
@@ -31,6 +55,18 @@ export const DEMO_PAGES: TuiDocPages = [
         title: 'Create custom primitive',
         route: DemoPath.WhatIsCabord,
         keywords: 'create, custom, primitive',
+    },
+    {
+        section: 'Plugins',
+        title: 'Provide realtime plugin',
+        route: DemoPath.WhatIsCabord,
+        keywords: 'create, custom, primitive',
+    },
+    {
+        section: 'Other',
+        title: 'Contribute',
+        route: DemoPath.WhatIsCabord,
+        keywords: `changelog, release, version, history`,
     },
     {
         section: 'Other',

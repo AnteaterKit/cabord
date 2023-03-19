@@ -57,4 +57,55 @@
         Cabord is flexible! Use Cabord.
         <strong>Create and Colloborate with it!</strong>
     </p>
+
+    <section class="tui-space_top-8">
+        <h2>Learn about Cabord</h2>
+
+        <div class="islands-wrapper">
+            <a
+                tuiIsland
+                class="island"
+                [hoverable]="true"
+                [routerLink]="cabordLibrariesDocPage"
+            >
+                <div class="tui-island__content">
+                    <tui-marker-icon
+                        mode="link"
+                        size="s"
+                        src="tuiIconGridLarge"
+                        class="tui-island__figure"
+                    ></tui-marker-icon>
+                    <div>
+                        <h3 class="tui-island__title">Explore libraries</h3>
+                        <p class="tui-island__paragraph">
+                            Cabord consists of several libraries. Explore them
+                            and learn how to install and use them.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a
+                tuiIsland
+                class="island"
+                [hoverable]="true"
+                [routerLink]="coreConceptsOverviewDocPage"
+            >
+                <div class="tui-island__content">
+                    <tui-marker-icon
+                        mode="link"
+                        size="s"
+                        src="tuiIconSettingsLarge"
+                        class="tui-island__figure"
+                    ></tui-marker-icon>
+                    <div>
+                        <h3 class="tui-island__title">Core concepts</h3>
+                        <p class="tui-island__paragraph">
+                            Learn about use Cabord, primitives, realtime, write
+                            plugin etc.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
 </tui-doc-page>
