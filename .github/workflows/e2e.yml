@@ -16,8 +16,8 @@ jobs:
       - name: Build demo
         run: npm run build
 
-      - name: Prerender demo
-        run: npm run build:prerender
+      #- name: Prerender demo
+        #run: npm run build:prerender
 
       - name: Serving static files
         run: |
