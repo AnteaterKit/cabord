@@ -1,12 +1,27 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-
-import {StaticComponent} from './modules/static/static.component';
+import {DemoPath} from './demo-path';
 
 export const appRoutes: Routes = [
     {
+        path: DemoPath.WhatIsCabord,
+        loadChildren: async () =>
+            import(`../pages/documentation/what-is-cabord/what-is-cabord.module`).then(
+                m => m.WhatIsCabordModule,
+            ),
+        data: {
+            title: `What is Caboard?`,
+        },
+    },
+    {
         path: '',
-        component: StaticComponent,
+        loadChildren: async () =>
+            import(`../pages/documentation/what-is-cabord/what-is-cabord.module`).then(
+                m => m.WhatIsCabordModule,
+            ),
+        data: {
+            title: `What is Caboard?`,
+        },
     },
     {
         path: 'lazy',
