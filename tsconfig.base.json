@@ -30,7 +30,8 @@
         "typeRoots": ["node_modules/@types"],
         "lib": ["es2018", "dom"],
         "paths": {
-            "@cabord/kit": ["projects/kit/src/index.ts"]
+            "@cabord/kit": ["projects/kit/src/index.ts"],
+            "@demo/routes": ["projects/demo/src/app/demo-path"]
         }
     },
     "ts-node": {
