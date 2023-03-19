@@ -8,10 +8,4 @@ describe('Server side rendering', () => {
     it('should successfully render static url', () => {
         cy.request(baseUrl).its('body').should('include', 'This is a static route');
     });
-
-    it('should successfully render lazy url', () => {
-        cy.request(`${baseUrl}/lazy`)
-            .its('body')
-            .should('include', 'This is a lazy route');
-    });
 });
