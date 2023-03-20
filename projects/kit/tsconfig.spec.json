@@ -15,5 +15,8 @@
         "**/*.test.jsx",
         "**/*.spec.jsx",
         "**/*.d.ts"
-    ]
+    ],
+    "jest": {
+        "setupFiles": ["jest-canvas-mock"]
+    }
 }
