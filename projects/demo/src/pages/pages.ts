@@ -29,7 +29,7 @@ export const DEMO_PAGES: TuiDocPages = [
     {
         section: 'Core concepts',
         title: 'Create whiteboard',
-        route: DemoPath.WhatIsCabord,
+        route: DemoPath.CreateCabord,
         keywords: 'core, concepts, overview',
     },
     {

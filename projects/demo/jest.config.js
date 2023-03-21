@@ -1,6 +1,7 @@
 module.exports = {
     displayName: 'demo',
     preset: '../../jest.preset.js',
+    setupFiles: ['jest-canvas-mock'],
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
     globals: {
         'ts-jest': {

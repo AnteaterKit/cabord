@@ -3,4 +3,5 @@ export const enum DemoPath {
     CabordLibraries = 'getting-started/cabord-libraries',
     CoreConceptsOverview = 'core-concepts/overview',
     Angular = 'Angular',
+    CreateCabord = 'CreateCabord',
 }
