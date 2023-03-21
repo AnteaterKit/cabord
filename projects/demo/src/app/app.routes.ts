@@ -30,7 +30,37 @@ export const appRoutes: Routes = [
                 m => m.CreateCabordModule,
             ),
         data: {
-            title: `Create Caboard?`,
+            title: `Create Caboard`,
+        },
+    },
+    {
+        path: DemoPath.CoreConceptsOverview,
+        loadChildren: async () =>
+            import(`../pages/documentation/overview/overview.module`).then(
+                m => m.OverviewModule,
+            ),
+        data: {
+            title: `Overview Caboard`,
+        },
+    },
+    {
+        path: DemoPath.CoreConceptsInstall,
+        loadChildren: async () =>
+            import(`../pages/documentation/install/install.module`).then(
+                m => m.InstallModule,
+            ),
+        data: {
+            title: `Install Caboard`,
+        },
+    },
+    {
+        path: DemoPath.CoreConceptsCustom,
+        loadChildren: async () =>
+            import(`../pages/documentation/custom/custom.module`).then(
+                m => m.CustomModule,
+            ),
+        data: {
+            title: `Install Caboard`,
         },
     },
     {

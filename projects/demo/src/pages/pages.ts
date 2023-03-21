@@ -17,26 +17,32 @@ export const DEMO_PAGES: TuiDocPages = [
     {
         section: 'Core concepts',
         title: 'Overview',
-        route: DemoPath.WhatIsCabord,
+        route: DemoPath.CoreConceptsOverview,
         keywords: 'core, concepts, overview',
     },
     {
         section: 'Core concepts',
         title: 'Install',
-        route: DemoPath.WhatIsCabord,
-        keywords: 'core, concepts, overview',
+        route: DemoPath.CoreConceptsInstall,
+        keywords: 'core, concepts, install',
     },
     {
         section: 'Core concepts',
-        title: 'Create whiteboard',
+        title: 'Create board',
         route: DemoPath.CreateCabord,
         keywords: 'core, concepts, overview',
     },
     {
         section: 'Core concepts',
         title: 'Customise',
-        route: DemoPath.WhatIsCabord,
-        keywords: 'core, concepts, overview',
+        route: DemoPath.CoreConceptsCustom,
+        keywords: 'core, concepts, customise',
+    },
+    {
+        section: 'Kit',
+        title: 'Kit overview',
+        route: DemoPath.KitOverview,
+        keywords: 'kit, concepts, overview',
     },
     {
         section: 'Third Party',
