@@ -24,6 +24,16 @@ export const appRoutes: Routes = [
         },
     },
     {
+        path: DemoPath.CreateCabord,
+        loadChildren: async () =>
+            import(`../pages/documentation/create-cabord/create-cabord.module`).then(
+                m => m.CreateCabordModule,
+            ),
+        data: {
+            title: `Create Caboard?`,
+        },
+    },
+    {
         path: '',
         loadChildren: async () =>
             import(`../pages/documentation/what-is-cabord/what-is-cabord.module`).then(
