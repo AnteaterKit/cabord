@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {DemoPath} from '@demo/routes';
 
 @Component({
     selector: 'app-install',
@@ -7,5 +8,6 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InstallComponent implements OnInit {
+    readonly cabordCreateDocPage = `/${DemoPath.CreateCabord}`;
     ngOnInit(): void {}
 }
