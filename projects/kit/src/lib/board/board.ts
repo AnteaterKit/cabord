@@ -1,4 +1,5 @@
 import Konva from 'konva';
+import {CaboardConfig} from '../classes/board-model/caboard-config';
 
 export class Caboard {
     private readonly _element: HTMLDivElement;
@@ -6,7 +7,7 @@ export class Caboard {
     private _stage: Konva.Stage | null = null;
     private _mainLayer: Konva.Layer | null = null;
 
-    constructor(element: HTMLDivElement, config: any) {
+    constructor(element: HTMLDivElement, config: CaboardConfig) {
         if (!element) {
             throw new Error(`Caboard: canvas HTMLElement not found`);
         }
@@ -23,6 +24,7 @@ export class Caboard {
         this.initStage();
         this.renderMainLayer();
         this.renderBackLayer();
+        this.buildScene();
     }
 
     // setScene(shapes: any[]) {
@@ -58,6 +60,8 @@ export class Caboard {
             height: this._config.height,
         });
     }
+
+    private buildScene() {}
 
     get stage(): Konva.Stage | null {
         return this._stage;
