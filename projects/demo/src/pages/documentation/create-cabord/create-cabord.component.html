@@ -1,5 +1,39 @@
-<tui-doc-page header="Create Cabord">
-    <div>
-        <div #board></div>
-    </div>
+<tui-doc-page
+    header="Create Cabord"
+    package="CORE"
+>
+    <ng-template pageTab>
+        Use
+        <code>caboard Class</code>
+        to create board.
+
+        <tui-notification class="tui-space_top-4">
+            <p>
+                Use
+                <code>caboardConfig</code>
+                to provide board's settings.
+            </p>
+
+            <tui-doc-code [code]="maskitoParseNumberDemo"></tui-doc-code>
+        </tui-notification>
+
+        <br />
+
+        <tui-doc-example
+            id="high-precision"
+            heading="Simple board"
+            [description]="precisionDescription"
+        >
+            <ng-template #precisionDescription></ng-template>
+            <div>
+                <div #board></div>
+            </div>
+        </tui-doc-example>
+    </ng-template>
+
+    <ng-template pageTab>
+        Use
+        <code>caboard Class</code>
+        to create board.
+    </ng-template>
 </tui-doc-page>

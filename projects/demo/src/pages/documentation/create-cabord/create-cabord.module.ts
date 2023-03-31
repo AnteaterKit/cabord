@@ -2,17 +2,40 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {CreateCabordComponent} from './create-cabord.component';
 import {TuiAddonDocModule, tuiGenerateRoutes} from '@taiga-ui/addon-doc';
-import {TuiLinkModule} from '@taiga-ui/core';
-import {TuiIslandModule, TuiMarkerIconModule} from '@taiga-ui/kit';
+import {
+    TuiLinkModule,
+    TuiNotificationModule,
+    TuiTextfieldControllerModule,
+} from '@taiga-ui/core';
+import {
+    TuiInputModule,
+    TuiIslandModule,
+    TuiMarkerIconModule,
+    TuiTabsModule,
+} from '@taiga-ui/kit';
 import {RouterModule} from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
         TuiAddonDocModule,
-        TuiIslandModule,
+        TuiInputModule,
+        TuiNotificationModule,
+        TuiTextfieldControllerModule,
+        CommonModule,
+        FormsModule,
         TuiLinkModule,
+        ReactiveFormsModule,
+        TuiIslandModule,
+        TuiAddonDocModule,
         TuiMarkerIconModule,
+        TuiInputModule,
+        TuiTabsModule,
+        TuiNotificationModule,
+        TuiTextfieldControllerModule,
         RouterModule.forChild(tuiGenerateRoutes(CreateCabordComponent)),
     ],
     declarations: [CreateCabordComponent],
