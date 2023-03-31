@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_anteaterkit_cabord=self.webpackChunk_anteaterkit_cabord||[]).push([[587],{4587:t=>{t.exports="import {Caboard} from '@cabord/kit';\n\nthis.\\_board = new Caboard(this.canvas.nativeElement, { width: this.canvas.nativeElement.clientWidth, height: 300, });\nthis.\\_board.render();\n"}}]);
