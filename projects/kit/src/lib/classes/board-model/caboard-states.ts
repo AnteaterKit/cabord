@@ -3,4 +3,5 @@ export enum CaboardStates {
     move = 'move',
     mouse = 'mouse',
     editShape = 'editshape',
+    freeline = 'freeline',
 }

@@ -7,7 +7,6 @@ describe('Caboard', () => {
     it('stage should work', () => {
         const caboard = new Caboard(element, {width: 200, height: 200});
         caboard.render();
-        expect(!!caboard.stage).toEqual(true);
-        expect(!!caboard.mainLayer).toEqual(true);
+        expect(!!caboard.boardEventHandler).toEqual(true);
     });
 });
