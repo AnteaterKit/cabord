@@ -5,7 +5,7 @@ import {
     ElementRef,
     ViewChild,
 } from '@angular/core';
-import {Caboard} from '@cabord/kit';
+import {Caboard, CaboardStates} from '@cabord/kit';
 
 @Component({
     selector: 'app-create-cabord',
@@ -15,7 +15,9 @@ import {Caboard} from '@cabord/kit';
 })
 export class CreateCabordComponent implements AfterViewInit {
     private _board: Caboard | null = null;
+    private _boardPen: Caboard | null = null;
     @ViewChild('board') canvas: ElementRef | null = null;
+    @ViewChild('boardPen') canvasPen: ElementRef | null = null;
 
     readonly maskitoParseNumberDemo = import('./examples/caboard-demo.md?raw');
 
@@ -26,6 +28,15 @@ export class CreateCabordComponent implements AfterViewInit {
                 height: 300,
             });
             this._board.render();
+        }
+
+        if (this.canvasPen) {
+            this._boardPen = new Caboard(this.canvasPen.nativeElement, {
+                width: 1000,
+                height: 300,
+                initialState: CaboardStates.freeline,
+            });
+            this._boardPen.render();
         }
     }
     get board() {

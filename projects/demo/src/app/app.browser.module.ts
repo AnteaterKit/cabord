@@ -8,6 +8,9 @@ import {AppRoutingModule} from './app.routes';
 import {StaticModule} from './modules/static/static.module';
 import {LogoModule} from './modules/logo/logo/logo.module';
 import {APP_PROVIDERS} from './app.providers';
+import {BootstrapCabord} from '@cabord/kit';
+
+BootstrapCabord();
 
 @NgModule({
     bootstrap: [AppComponent],

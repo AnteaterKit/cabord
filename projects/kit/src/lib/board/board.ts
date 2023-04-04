@@ -1,13 +1,13 @@
-import Konva from 'konva';
 import {CaboardConfig} from '../classes/board-model/caboard-config';
+import {BoardEventHandler} from './board-event-handler';
+import {CaboardView} from './board-view';
 
 export class Caboard {
-    private readonly _element: HTMLDivElement;
-    private readonly _config: any;
-    private _stage: Konva.Stage | null = null;
-    private _mainLayer: Konva.Layer | null = null;
-
-    constructor(element: HTMLDivElement, config: CaboardConfig) {
+    private _boardEventHandler: BoardEventHandler | null = null;
+    constructor(
+        private readonly element: HTMLDivElement,
+        private readonly config: CaboardConfig,
+    ) {
         if (!element) {
             throw new Error(`Caboard: canvas HTMLElement not found`);
         }
@@ -15,59 +15,20 @@ export class Caboard {
         if (!config) {
             throw new Error(`Caboard: config not found`);
         }
-
-        this._element = element;
-        this._config = config;
     }
 
     render() {
-        this.initStage();
-        this.renderMainLayer();
-        this.renderBackLayer();
-        this.buildScene();
+        const view = new CaboardView(this.element, this.config);
+        view.render();
+        this._boardEventHandler = new BoardEventHandler(view);
+        this._boardEventHandler.subscribe();
     }
 
-    // setScene(shapes: any[]) {
-
-    // }
-
-    private renderMainLayer() {
-        if (this._stage) {
-            this._stage.container().style.backgroundColor = '#4560EC';
-            const rect1 = new Konva.Rect({
-                x: 20,
-                y: 20,
-                width: 100,
-                height: 50,
-                fill: 'green',
-                stroke: 'black',
-                strokeWidth: 4,
-            });
-
-            this._mainLayer = new Konva.Layer();
-            this._mainLayer.add(rect1);
-            this._stage.add(this._mainLayer);
-            this._mainLayer.draw();
-        }
+    get boardEventHandler() {
+        return this._boardEventHandler;
     }
 
-    private renderBackLayer() {}
-
-    private initStage() {
-        this._stage = new Konva.Stage({
-            container: this._element,
-            width: this._config.width,
-            height: this._config.height,
-        });
-    }
-
-    private buildScene() {}
-
-    get stage(): Konva.Stage | null {
-        return this._stage;
-    }
-
-    get mainLayer(): Konva.Layer | null {
-        return this._mainLayer;
+    destroy() {
+        this._boardEventHandler?.destroy();
     }
 }
