@@ -8,5 +8,6 @@ import {DemoPath} from '@demo/routes';
 })
 export class CabordLibrariesComponent {
     readonly coreConceptsOverviewDocPage = `/${DemoPath.CoreConceptsOverview}`;
+    readonly kitOverviewDocPage = `/${DemoPath.KitOverview}`;
     readonly angularDocPage = `/${DemoPath.Angular}`;
 }
