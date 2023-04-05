@@ -64,6 +64,14 @@ export const appRoutes: Routes = [
         },
     },
     {
+        path: DemoPath.KitOverview,
+        loadChildren: async () =>
+            import(`../pages/documentation/kit/kit.module`).then(m => m.KitModule),
+        data: {
+            title: `Overview Kit`,
+        },
+    },
+    {
         path: '',
         loadChildren: async () =>
             import(`../pages/documentation/what-is-cabord/what-is-cabord.module`).then(

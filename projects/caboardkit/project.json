@@ -1,0 +1,23 @@
+{
+    "root": "projects/caboardkit",
+    "sourceRoot": "projects/caboardkit/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["projects/caboardkit/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/projects/caboardkit"],
+            "options": {
+                "jestConfig": "projects/caboardkit/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    },
+    "tags": []
+}
